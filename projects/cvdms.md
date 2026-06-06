@@ -9,7 +9,7 @@ CVDMS is an AWS CDK-based system for managing computer vision imagery, labels, m
 The project is designed as a durable data layer beneath model-training workflows. Raw images and labels are uploaded once, validated, normalized, deduplicated, registered into a canonical catalog, and reused to create versioned train/validation/test datasets for downstream machine learning projects.
 
 <p align="center">
-  <img src="../assets/images/cvdms/diagrams/cvdms-overview.png" alt="CVDMS overview workflow" width="500"><br>
+  <img src="../assets/images/cvdms/diagrams/cvdms-overview.png" alt="CVDMS overview workflow" width="400"><br>
   <em>CVDMS workflow from raw imagery and labels to versioned dataset artifacts and downstream training projects.</em>
 </p>
 
@@ -32,7 +32,7 @@ This makes it useful across common computer vision workflows, from classificatio
 CVDMS is organized into separate AWS CDK stacks for logging, storage, upload processing, and dataset operations.
 
 <p align="center">
-  <img src="../assets/images/cvdms/diagrams/cvdms-architecture.png" alt="CVDMS AWS architecture" width="500"><br>
+  <img src="../assets/images/cvdms/diagrams/cvdms-architecture.png" alt="CVDMS AWS architecture" width="425"><br>
   <em>AWS CDK architecture with logging, storage, upload, and dataset operation stacks.</em>
 </p>
 
