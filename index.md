@@ -1,9 +1,34 @@
 # Brian Odle
+
+---
+title: Brian Odle | Computer Vision & Machine Learning Portfolio
+description: Applied computer vision, machine learning, remote sensing, model evaluation, and deployment-oriented portfolio projects.
+image: /assets/images/social-preview.jpg
+---
+
+<div style="display: flex; gap: 24px; align-items: flex-start; margin-top: 24px; flex-wrap: wrap;">
+
+  <img src="/assets/images/portfolio-hero.jpg"
+       alt="Green winter mountain landscape"
+       style="width: 340px; max-width: 100%; border-radius: 10px;">
+
+  <div style="flex: 1; min-width: 260px;">
+
+## Computer Vision & Machine Learning Portfolio
+
+I’m a Computer Vision and Machine Learning Engineer focused on applied image-analysis systems, satellite imagery, remote sensing, object detection, segmentation, model evaluation, and deployment-oriented ML workflows.
+
+This site highlights selected portfolio projects with links to source code, project documentation, results, and technical case studies.
+
+  </div>
+
+</div>
+
+---
+
 ## Computer Vision & Machine Learning Engineer
 
 ![Green winter mountain landscape](assets/images/portfolio-hero.jpg)
-
-# Brian Odle
 
 ## Computer Vision & Machine Learning Engineer
 
