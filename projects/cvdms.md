@@ -74,7 +74,7 @@ After images and labels are registered, CVDMS can create reproducible dataset ve
 Datasets are not edited in place. Each create or update operation produces a new immutable version with its own membership rows, metadata, manifests, and visualization artifacts.
 
 <p align="center">
-  <img src="{{ '/assets/images/cvdms/diagrams/cvdms-overview.png' | relative_url }}" alt="CVDMS overview workflow" width="850"><br>
+  <img src="../assets/images/cvdms/diagrams/cvdms-dataset-operations.png" alt="CVDMS overview workflow" width="850"><br>
   <em>CVDMS workflow from raw imagery and labels to versioned dataset artifacts and downstream training projects.</em>
 </p>
 
