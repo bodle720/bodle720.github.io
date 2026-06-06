@@ -4,71 +4,149 @@
 
 @import "{{ site.theme }}";
 
-/* Overall page */
+/* ---------- Palette ---------- */
+:root {
+--bg: #0f172a;
+--bg-soft: #111c33;
+--card: #182235;
+--card-2: #1e2b44;
+--text: #e5e7eb;
+--muted: #aab4c8;
+--heading: #f8fafc;
+--accent: #7dd3fc;
+--accent-strong: #38bdf8;
+--border: #2f3f5f;
+--table-head: #223451;
+--code-bg: #0b1220;
+}
+
+/* ---------- Layout reset for jekyll-theme-minimal ---------- */
+
+* {
+  box-sizing: border-box;
+  }
+
 body {
-background: #f5f7fb;
-color: #1f2937;
+margin: 0;
+background:
+radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 34rem),
+linear-gradient(180deg, #0f172a 0%, #111827 100%);
+color: var(--text);
 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 line-height: 1.65;
 }
 
-/* Main content card */
 .wrapper {
-max-width: 1080px;
+width: min(1120px, calc(100% - 40px));
 margin: 0 auto;
-padding: 36px 24px;
+padding: 34px 0;
+display: grid;
+grid-template-columns: 270px minmax(0, 1fr);
+gap: 28px;
 }
 
-/* Sidebar / header area in jekyll-theme-minimal */
+/* Sidebar card */
 header {
-background: #ffffff;
-border: 1px solid #e5e7eb;
+float: none;
+position: sticky;
+top: 24px;
+width: auto;
+height: fit-content;
+background: rgba(24, 34, 53, 0.94);
+border: 1px solid var(--border);
 border-radius: 18px;
 padding: 24px;
-box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
 }
 
-/* Main article area */
+/* Main content card */
 section {
-background: #ffffff;
-border: 1px solid #e5e7eb;
+float: none;
+width: auto;
+min-width: 0;
+background: rgba(24, 34, 53, 0.96);
+border: 1px solid var(--border);
 border-radius: 18px;
-padding: 32px;
-box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+padding: 34px;
+box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
 }
 
-/* Headings */
-h1, h2, h3 {
-color: #0f172a;
+/* Footer in Minimal theme */
+footer {
+float: none;
+position: static;
+width: auto;
+color: var(--muted);
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+color: var(--heading);
 line-height: 1.25;
 }
 
 h1 {
-font-size: 2.2rem;
-margin-bottom: 0.4em;
+font-size: 2.25rem;
+margin-top: 0;
+margin-bottom: 0.45em;
 }
 
 h2 {
-margin-top: 1.6em;
-padding-bottom: 0.25em;
-border-bottom: 1px solid #e5e7eb;
+margin-top: 1.7em;
+padding-bottom: 0.35em;
+border-bottom: 1px solid var(--border);
 }
 
 h3 {
-color: #1e3a8a;
+color: #bfdbfe;
 }
 
-/* Links */
+p, li {
+color: var(--text);
+}
+
+small,
+em {
+color: var(--muted);
+}
+
+strong {
+color: var(--heading);
+}
+
+/* ---------- Links ---------- */
 a {
-color: #2563eb;
+color: var(--accent);
 font-weight: 600;
+text-decoration: none;
 }
 
 a:hover {
-color: #1d4ed8;
+color: var(--accent-strong);
+text-decoration: underline;
 }
 
-/* Tables */
+/* GitHub/theme buttons */
+header ul {
+background: transparent;
+border: 1px solid var(--border);
+border-radius: 12px;
+overflow: hidden;
+}
+
+header li {
+border-color: var(--border);
+}
+
+header ul a {
+color: var(--heading);
+}
+
+header ul a:hover {
+color: var(--accent);
+}
+
+/* ---------- Tables ---------- */
 table {
 width: 100%;
 border-collapse: collapse;
@@ -77,55 +155,79 @@ font-size: 0.95rem;
 }
 
 th {
-background: #eef2ff;
-color: #111827;
+background: var(--table-head);
+color: var(--heading);
+}
+
+td {
+color: var(--text);
 }
 
 th, td {
-border: 1px solid #e5e7eb;
+border: 1px solid var(--border);
 padding: 10px 12px;
 }
 
-/* Code blocks */
+/* ---------- Code blocks ---------- */
 pre, code {
-background: #f1f5f9;
-color: #0f172a;
+background: var(--code-bg);
+color: #dbeafe;
 border-radius: 8px;
+}
+
+code {
+padding: 2px 5px;
 }
 
 pre {
 padding: 16px;
 overflow-x: auto;
+border: 1px solid var(--border);
 }
 
-/* Images and GIFs */
+pre code {
+padding: 0;
+}
+
+/* ---------- Images ---------- */
 img {
-border-radius: 14px;
 max-width: 100%;
+border-radius: 14px;
 }
 
 p img {
-box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
 }
 
-/* Horizontal rules */
+/* ---------- Dividers / blockquotes ---------- */
 hr {
 border: 0;
-border-top: 1px solid #e5e7eb;
+border-top: 1px solid var(--border);
 margin: 2rem 0;
 }
 
-/* Small-screen cleanup */
-@media print, screen and (max-width: 960px) {
-header,
-section {
-float: none;
+blockquote {
+border-left: 4px solid var(--accent);
+color: var(--muted);
+background: rgba(125, 211, 252, 0.06);
+padding: 0.8em 1em;
+border-radius: 10px;
+}
+
+/* ---------- Mobile ---------- */
+@media print, screen and (max-width: 900px) {
+.wrapper {
+width: min(100% - 24px, 760px);
+display: block;
+padding: 18px 0;
+}
+
+header {
 position: static;
-width: auto;
+margin-bottom: 18px;
 }
 
 section {
-border: 1px solid #e5e7eb;
 padding: 24px;
 }
 }
