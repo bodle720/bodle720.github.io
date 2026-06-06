@@ -270,10 +270,9 @@ Future improvements could include:
 * deployment monitoring on production-like imagery
 
 ## Links
-
-* [Source code and full documentation](https://github.com/bodle720/MLProjects/tree/main/Training_Project/projects/GlobalWheatHeadDetection)
-* [Dataset exploration README](https://github.com/bodle720/MLProjects/tree/main/Training_Project/projects/GlobalWheatHeadDetection/docs/README_initial_dataset.md)
-* [Training experiments README](https://github.com/bodle720/MLProjects/tree/main/Training_Project/projects/GlobalWheatHeadDetection/docs/README_training_experiments.md)
-* [Final results README](https://github.com/bodle720/MLProjects/tree/main/Training_Project/projects/GlobalWheatHeadDetection/docs/README_results.md)
-* [Deployment README](https://github.com/bodle720/MLProjects/tree/main/Training_Project/projects/GlobalWheatHeadDetection/deployment/README.md)
-* [Evaluation README](https://github.com/bodle720/MLProjects/tree/main/Training_Project/projects/GlobalWheatHeadDetection/evaluation/README.md)
+* [Source code and full documentation](https://github.com/bodle720/MLProjects/tree/main/Training_Projects/projects/GlobalWheatHeadDetection)
+* [Dataset exploration README](https://github.com/bodle720/MLProjects/tree/main/Training_Projects/projects/GlobalWheatHeadDetection/docs/README_initial_dataset.md)
+* [Training experiments README](https://github.com/bodle720/MLProjects/tree/main/Training_Projects/projects/GlobalWheatHeadDetection/docs/README_training_experiments.md)
+* [Final results README](https://github.com/bodle720/MLProjects/tree/main/Training_Projects/projects/GlobalWheatHeadDetection/docs/README_results.md)
+* [Deployment README](https://github.com/bodle720/MLProjects/tree/main/Training_Projects/projects/GlobalWheatHeadDetection/deployment/README.md)
+* [Evaluation README](https://github.com/bodle720/MLProjects/tree/main/Training_Projects/projects/GlobalWheatHeadDetection/evaluation/README.md)
