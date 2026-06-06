@@ -74,8 +74,8 @@ After images and labels are registered, CVDMS can create reproducible dataset ve
 Datasets are not edited in place. Each create or update operation produces a new immutable version with its own membership rows, metadata, manifests, and visualization artifacts.
 
 <p align="center">
-  <img src="../assets/images/cvdms/diagrams/cvdms-dataset-operations.png" alt="CVDMS dataset operations workflow" width="850"><br>
-  <em>Dataset API requests create immutable dataset versions with Iceberg membership rows, S3 artifacts, and DynamoDB provenance.</em>
+  <img src="{{ '/assets/images/cvdms/diagrams/cvdms-overview.png' | relative_url }}" alt="CVDMS overview workflow" width="850"><br>
+  <em>CVDMS workflow from raw imagery and labels to versioned dataset artifacts and downstream training projects.</em>
 </p>
 
 Each dataset version can produce:
