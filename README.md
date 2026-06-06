@@ -1,9 +1,3 @@
----
-title: Brian Odle | Computer Vision & Machine Learning Portfolio
-description: Applied computer vision, machine learning, remote sensing, model evaluation, and deployment-oriented portfolio projects.
-image: /assets/images/social-preview.jpg
----
-
 # Brian Odle
 ## Computer Vision & Machine Learning Engineer
 
