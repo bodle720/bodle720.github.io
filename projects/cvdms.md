@@ -74,8 +74,8 @@ After images and labels are registered, CVDMS can create reproducible dataset ve
 Datasets are not edited in place. Each create or update operation produces a new immutable version with its own membership rows, metadata, manifests, and visualization artifacts.
 
 <p align="center">
-  <img src="../assets/images/cvdms/diagrams/cvdms-dataset-operations_small.png" alt="CVDMS overview workflow" width="850"><br>
-  <em>CVDMS workflow from raw imagery and labels to versioned dataset artifacts and downstream training projects.</em>
+  <img src="../assets/images/cvdms/diagrams/cvdms-dataset-operations.png" alt="CVDMS dataset ops" width="850"><br>
+  <em>Dataset API requests create immutable dataset versions with Iceberg membership rows, S3 artifacts, and DynamoDB provenance.</em>
 </p>
 
 Each dataset version can produce:
@@ -116,7 +116,7 @@ CVDMS includes a local Streamlit dashboard for inspecting dataset visualization 
 The viewer reads JSON artifacts from S3 and renders charts, tables, and diagnostics for a selected dataset version.
 
 <p align="center">
-  <img src="../assets/images/cvdms/dataset-viewer-overview.png" alt="CVDMS Dataset Viewer screenshot" width="850"><br>
+  <img src="../assets/images/cvdms/dataset-viewer-overview.png" alt="CVDMS Dataset Viewer" width="850"><br>
   <em>Dataset viewer for inspecting split balance, class distribution, source drift, and image-quality buckets.</em>
 </p>
 
