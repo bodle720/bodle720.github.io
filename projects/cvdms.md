@@ -8,18 +8,10 @@ CVDMS is an AWS CDK-based system for managing computer vision imagery, labels, m
 
 The project is designed as a durable data layer beneath model-training workflows. Raw images and labels are uploaded once, validated, normalized, deduplicated, registered into a canonical catalog, and reused to create versioned train/validation/test datasets for downstream machine learning projects.
 
-```mermaid
-flowchart LR
-    Raw["Raw imagery + labels<br/>CSV / JSONL / manifests"] --> Upload["Upload workflow<br/>validate, dedupe, register"]
-    Upload --> Catalog["Canonical CVDMS catalog<br/>images, labels, metadata"]
-    Catalog --> DatasetOps["Dataset operations<br/>create, update, delete, version"]
-    DatasetOps --> Artifacts["Dataset artifacts<br/>train / val / test manifests<br/>metadata + visualization JSON"]
-    Artifacts --> Viewer["Streamlit dataset viewer<br/>class balance, split drift,<br/>quality buckets"]
-    Artifacts --> Training["Training projects<br/>PyTorch / YOLO / MLflow"]
-
-    Upload -. failures .-> DLQ["Workflow DLQ<br/>cleanup, unlock,<br/>mark failed"]
-    DatasetOps -. failures .-> DLQ
-```
+<p align="center">
+  <img src="../assets/images/cvdms/diagrams/cvdms-overview.png" alt="CVDMS overview workflow" width="850"><br>
+  <em>CVDMS workflow from raw imagery and labels to versioned dataset artifacts and downstream training projects.</em>
+</p>
 
 ## Why This Project Matters
 
@@ -39,31 +31,10 @@ This makes it useful across common computer vision workflows, from classificatio
 
 CVDMS is organized into separate AWS CDK stacks for logging, storage, upload processing, and dataset operations.
 
-```mermaid
-flowchart LR
-    Logging["Logging Stack<br/>Firehose<br/>transform Lambda<br/>S3 log storage<br/>Glue + Athena logs"]
-
-    Storage["Storage Stack<br/>S3 buckets<br/>DynamoDB tables<br/>SQS queues<br/>Glue + Athena<br/>Iceberg tables"]
-
-    Upload["Upload Stack<br/>UploadEventsQueue consumer<br/>Step Functions<br/>Lambda + Batch workers<br/>validation / dedup / registration"]
-
-    Dataset["Dataset Stack<br/>DatasetEventsQueue consumer<br/>Step Functions<br/>create / update / delete<br/>visualization generation"]
-
-    API["cvdms_platform API<br/>upload + dataset clients"] --> Storage
-    API --> Upload
-    API --> Dataset
-
-    Storage --> Upload
-    Storage --> Dataset
-    Logging --> Upload
-    Logging --> Dataset
-    Logging --> Storage
-
-    Upload --> Catalog["Canonical catalog<br/>images, labels,<br/>image-label links"]
-    Dataset --> Artifacts["Versioned dataset artifacts<br/>manifests, metadata,<br/>visualization JSON"]
-
-    Catalog --> Dataset
-```
+<p align="center">
+  <img src="../assets/images/cvdms/diagrams/cvdms-architecture.png" alt="CVDMS AWS architecture" width="850"><br>
+  <em>AWS CDK architecture with logging, storage, upload, and dataset operation stacks.</em>
+</p>
 
 Core technologies:
 
@@ -102,25 +73,10 @@ After images and labels are registered, CVDMS can create reproducible dataset ve
 
 Datasets are not edited in place. Each create or update operation produces a new immutable version with its own membership rows, metadata, manifests, and visualization artifacts.
 
-```mermaid
-flowchart LR
-    API["CvdmsApp<br/>dataset API"] --> Get["get_dataset(...)<br/>sync metadata read"]
-    API --> Create["submit_create_dataset(...)<br/>async create v1"]
-    API --> Update["submit_update_dataset(...)<br/>async create vN+1"]
-    API --> Delete["submit_delete_dataset_all_versions(...)<br/>async delete"]
-
-    Get --> DDBRead["DynamoDB<br/>dataset + latest version"]
-
-    Create --> Queue["DatasetEventsQueue"]
-    Update --> Queue
-    Delete --> Queue
-
-    Queue --> Workflow["Dataset Step Functions workflow"]
-
-    Workflow --> Membership["Iceberg membership tables<br/>versioned rows"]
-    Workflow --> Artifacts["S3 dataset artifacts<br/>manifests, metadata,<br/>visualization JSON"]
-    Workflow --> DDBWrite["DynamoDB provenance<br/>dataset + version records"]
-```
+<p align="center">
+  <img src="../assets/images/cvdms/diagrams/cvdms-dataset-operations.png" alt="CVDMS dataset operations workflow" width="850"><br>
+  <em>Dataset API requests create immutable dataset versions with Iceberg membership rows, S3 artifacts, and DynamoDB provenance.</em>
+</p>
 
 Each dataset version can produce:
 
