@@ -167,9 +167,10 @@ The selected model was registered in MLflow and served through a Dockerized Fast
 
 At startup, the API loads:
 
-```text
-models:/GlobalWheatHeadDetector@champion
-```
+<div class="tech-callout">
+  <div class="tech-callout-label">Registered MLflow model URI</div>
+  <code>models:/GlobalWheatHeadDetector@champion</code>
+</div>
 
 The `/predict` endpoint accepts an image upload and returns structured detections, bounding boxes, confidence scores, inference settings, and request-level latency metrics.
 
