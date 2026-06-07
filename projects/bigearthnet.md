@@ -1,3 +1,9 @@
+---
+title: BigEarthNet Multi-label Satellite Imagery Classification
+description: PyTorch multi-label remote sensing classifier with threshold tuning, class-level diagnostics, and multi-label error analysis.
+image: /assets/images/social/bigearthnet-preview.jpg
+---
+
 # BigEarthNet Multi-Label Satellite Classification
 
 [← Back to Portfolio](../index.md)

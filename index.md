@@ -1,7 +1,7 @@
 ---
 title: Brian Odle | Computer Vision & Machine Learning Portfolio
 description: Applied computer vision, machine learning, remote sensing, model evaluation, and deployment-oriented portfolio projects.
-image: /assets/images/social-preview.jpg
+image: /assets/images/social/portfolio-preview.jpg
 ---
 
 ## Computer Vision & Machine Learning Engineer
@@ -68,5 +68,3 @@ Computer Vision · Machine Learning · PyTorch · YOLO · MLflow · FastAPI · D
 * [GitHub](https://github.com/bodle720)
 * [MLProjects Repository](https://github.com/bodle720/MLProjects)
 * [DSTopics Repository](https://github.com/bodle720/DSTopics)
-
-Social preview by <a href="https://unsplash.com/@skyfly_rich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Richard Lu</a> on <a href="https://unsplash.com/photos/snow-capped-mountains-loom-over-a-forest-tK3_pEIiiSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

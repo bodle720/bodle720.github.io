@@ -1,17 +1,21 @@
-<meta property="og:title" content="Brian Odle | Computer Vision & Machine Learning Portfolio">
-<meta property="og:description" content="Applied computer vision, machine learning, remote sensing, model evaluation, and deployment-oriented portfolio projects.">
-<meta property="og:image" content="https://bodle720.github.io/assets/images/social-preview.jpg">
-<meta property="og:image:secure_url" content="https://bodle720.github.io/assets/images/social-preview.jpg">
+{% assign preview_image = page.image | default: site.image | default: "/assets/images/social/portfolio-preview.jpg" %}
+{% assign preview_title = page.title | default: site.title | default: "Brian Odle | Computer Vision & Machine Learning Portfolio" %}
+{% assign preview_description = page.description | default: site.description | default: "Applied computer vision, machine learning, remote sensing, model evaluation, and deployment-oriented portfolio projects." %}
+
+<meta property="og:title" content="{{ preview_title }}">
+<meta property="og:description" content="{{ preview_description }}">
+<meta property="og:image" content="{{ preview_image | absolute_url }}">
+<meta property="og:image:secure_url" content="{{ preview_image | absolute_url }}">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://bodle720.github.io/">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Brian Odle | Computer Vision & Machine Learning Portfolio">
-<meta name="twitter:description" content="Applied computer vision, machine learning, remote sensing, model evaluation, and deployment-oriented portfolio projects.">
-<meta name="twitter:image" content="https://bodle720.github.io/assets/images/social-preview.jpg">
+<meta name="twitter:title" content="{{ preview_title }}">
+<meta name="twitter:description" content="{{ preview_description }}">
+<meta name="twitter:image" content="{{ preview_image | absolute_url }}">
 
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">

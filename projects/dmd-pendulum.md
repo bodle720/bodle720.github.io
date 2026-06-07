@@ -1,3 +1,9 @@
+---
+title: Dynamic Mode Decomposition for Pendulum Video Analysis
+description: Applied mathematics and computer vision project using DMD to analyze spatial modes, frequencies, reconstruction, and forecasting from video.
+image: /assets/images/social/dmd-pendulum-preview.jpg
+---
+
 # Dynamic Mode Decomposition for Pendulum Video Analysis
 
 [← Back to Portfolio](../index.md)

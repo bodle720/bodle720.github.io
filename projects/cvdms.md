@@ -1,3 +1,9 @@
+---
+title: AWS Computer Vision Dataset Management System
+description: AWS-native computer vision dataset platform for image validation, deduplication, dataset versioning, and reproducible ML workflows.
+image: /assets/images/social/cvdms-preview.jpg
+---
+
 # Computer Vision Dataset Management System
 
 [← Back to Portfolio](../index.md)

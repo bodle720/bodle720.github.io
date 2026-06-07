@@ -1,3 +1,9 @@
+---
+title: Applied YOLO Object Detection | Global Wheat Head Detection
+description: YOLO object detection pipeline with MLflow tracking, held-out evaluation, FastAPI inference, Docker support, and latency reporting.
+image: /assets/images/social/global-wheat-preview.jpg
+---
+
 # Global Wheat Head Detection
 
 [← Back to Portfolio](../index.md)
