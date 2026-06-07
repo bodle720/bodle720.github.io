@@ -1,6 +1,7 @@
 ---
 title: Image Credits
 description: Image credits and attribution for portfolio website visuals.
+permalink: /image-credits/
 ---
 
 [← Back to Portfolio](/)
