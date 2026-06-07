@@ -1,6 +1,6 @@
 # Dynamic Mode Decomposition for Pendulum Video Analysis
 
-[← Back to Portfolio](../README.md)
+[← Back to Portfolio](../index.md)
 
 ## Applied Math, Video Dynamics, and Low-Rank Forecasting
 

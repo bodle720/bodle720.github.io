@@ -1,6 +1,6 @@
 # Computer Vision Dataset Management System
 
-[← Back to Portfolio](../README.md)
+[← Back to Portfolio](../index.md)
 
 ## AWS-Based Data Infrastructure for Computer Vision Workflows
 

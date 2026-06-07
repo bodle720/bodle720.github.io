@@ -1,6 +1,6 @@
 # Global Wheat Head Detection
 
-[← Back to Portfolio](../README.md)
+[← Back to Portfolio](../index.md)
 
 ## End-to-End YOLO Object Detection for Dense Agricultural Imagery
 
@@ -10,9 +10,9 @@ The task is a dense small-object detection problem: each image can contain many 
 
 **Prediction visualization legend**
 
-- <span style="color: #ef4444;"><strong>Red</strong></span>: ground-truth wheat heads
-- <span style="color: #22c55e;"><strong>Green</strong></span>: matched predictions / true positives
-- <span style="color: #3b82f6;"><strong>Blue</strong></span>: unmatched predictions / false positives
+- <strong style="color: #ef4444;">Red:</strong> ground-truth wheat heads
+- <strong style="color: #22c55e;">Green:</strong> matched predictions / true positives
+- <strong style="color: #3b82f6;">Blue:</strong> unmatched predictions / false positives
 - **Missed detections:** red boxes without a corresponding green prediction
 - **Match rule:** prediction is matched when IoU ≥ 0.5 with a ground-truth box
 

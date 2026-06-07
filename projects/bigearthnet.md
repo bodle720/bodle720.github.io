@@ -1,6 +1,6 @@
 # BigEarthNet Multi-Label Satellite Classification
 
-[← Back to Portfolio](../README.md)
+[← Back to Portfolio](../index.md)
 
 ## PyTorch Multi-Label Classification for Remote Sensing Imagery
 
