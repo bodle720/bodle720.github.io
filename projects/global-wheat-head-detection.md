@@ -8,6 +8,14 @@ This project builds a deployment-ready computer vision workflow for detecting in
 
 The task is a dense small-object detection problem: each image can contain many small, visually similar wheat heads that are tightly packed, partially occluded, or difficult to separate from the surrounding crop. The project covers the full workflow from dataset preparation and YOLO training through MLflow model selection, held-out test evaluation, and Dockerized FastAPI inference.
 
+**Prediction visualization legend**
+
+- <span style="color: #ef4444;"><strong>Red</strong></span>: ground-truth wheat heads
+- <span style="color: #22c55e;"><strong>Green</strong></span>: matched predictions / true positives
+- <span style="color: #3b82f6;"><strong>Blue</strong></span>: unmatched predictions / false positives
+- **Missed detections:** red boxes without a corresponding green prediction
+- **Match rule:** prediction is matched when IoU ≥ 0.5 with a ground-truth box
+
 <p align="center">
   <img src="../assets/images/global-wheat/effective_example.jpg" alt="Successful wheat head detection example" width="850"><br>
   <em>Held-out test example with ground truth boxes, matched predictions, and unmatched predictions.</em>
