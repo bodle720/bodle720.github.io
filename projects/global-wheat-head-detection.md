@@ -35,25 +35,33 @@ The task is a dense small-object detection problem: each image can contain many 
 
 ## Workflow
 
-```text
-CVDMS dataset artifacts
-        ↓
-local dataset cache and visual inspection
-        ↓
-YOLO-format conversion
-        ↓
-YOLO training experiments
-        ↓
-MLflow and TensorBoard tracking
-        ↓
-validation-based model selection
-        ↓
-held-out test evaluation
-        ↓
-MLflow champion registration
-        ↓
-FastAPI/Docker inference service
-```
+<div class="workflow">
+  <div class="workflow-step">CVDMS dataset artifacts</div>
+  <div class="workflow-arrow">↓</div>
+
+  <div class="workflow-step">Local dataset cache and visual inspection</div>
+  <div class="workflow-arrow">↓</div>
+
+  <div class="workflow-step">YOLO-format conversion</div>
+  <div class="workflow-arrow">↓</div>
+
+  <div class="workflow-step">YOLO training experiments</div>
+  <div class="workflow-arrow">↓</div>
+
+  <div class="workflow-step">MLflow and TensorBoard tracking</div>
+  <div class="workflow-arrow">↓</div>
+
+  <div class="workflow-step">Validation-based model selection</div>
+  <div class="workflow-arrow">↓</div>
+
+  <div class="workflow-step">Held-out test evaluation</div>
+  <div class="workflow-arrow">↓</div>
+
+  <div class="workflow-step">MLflow champion registration</div>
+  <div class="workflow-arrow">↓</div>
+
+  <div class="workflow-step">FastAPI/Docker inference service</div>
+</div>
 
 The goal was not only to train a detector, but to build a reproducible, inspectable, deployment-oriented object detection workflow.
 
