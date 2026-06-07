@@ -34,11 +34,11 @@ The project asks:
 
 DMD learns an approximate linear time-advance model:
 
-```text
-x[k+1] ≈ A x[k]
-```
+<div class="equation-card">
+  x<sub>k+1</sub> <span class="symbol">≈</span> A x<sub>k</sub>
+</div>
 
-For video, each `x[k]` is a flattened image frame or a lower-dimensional state representation derived from the motion.
+For video, each x<sub>k</sub> is a flattened image frame or a lower-dimensional state representation derived from the motion.
 
 ## Approach
 

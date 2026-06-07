@@ -305,3 +305,21 @@ border-radius: 8px;
 padding: 5px 8px;
 font-size: 0.95rem;
 }
+
+/* ---------- Equation callout ---------- */
+.equation-card {
+background: rgba(15, 23, 42, 0.72);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 14px 18px;
+margin: 1rem 0;
+text-align: center;
+font-size: 1.25rem;
+font-weight: 600;
+color: var(--heading);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.equation-card .symbol {
+color: var(--accent);
+}
