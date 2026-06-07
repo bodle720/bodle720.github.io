@@ -97,11 +97,20 @@ Per-class thresholding modestly improved thresholded metrics, especially precisi
 
 ## Diagnostic Analysis
 
-The most useful result was not only the score table, but the error structure. The model’s mistakes were not random. They clustered around visually related land-cover groups, especially forest/woodland/shrub classes and agriculture/pasture/cultivation classes.
+The most useful diagnostic result was the structure of the model’s errors. Because BigEarthNet is multi-label, these heatmaps are not standard confusion matrices; they show label associations, co-occurrence patterns, and structured failure modes, with many errors clustering around visually related land-cover groups such as forest/woodland/shrub and agriculture/pasture/cultivation classes.
+
+The first heatmap shows how often each predicted label is associated with each true label across the test set. The strong diagonal pattern is a useful sanity check: the model most often associates each class with itself, while off-diagonal structure highlights related or frequently co-occurring land-cover labels.
+
+<p align="center">
+  <img src="../assets/images/bigearthnet/false_association_probability_heatmap.png" alt="False association probability heatmap" width="850"><br>
+  <em>False-association probability heatmap for predicted labels versus true labels on the test set.</em>
+</p>
+
+The second heatmap focuses only on imperfect predictions. Rows represent true labels that were missed, while columns represent extra labels that were predicted, making it useful for diagnosing which land-cover classes are confused when the model makes multi-label errors.
 
 <p align="center">
   <img src="../assets/images/bigearthnet/missed_vs_extra_heatmap.png" alt="Missed versus extra label heatmap" width="850"><br>
-  <em>Missed-vs-extra label heatmap showing structured multi-label confusion patterns on the test set.</em>
+  <em>Missed-vs-extra label heatmap showing structured multi-label error patterns on the test set.</em>
 </p>
 
 Common patterns:
