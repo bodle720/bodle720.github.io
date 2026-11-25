@@ -30,8 +30,6 @@ I build practical computer vision and machine learning systems across dataset in
 
 This portfolio highlights selected projects with concise case studies, visuals, results, and links to the full source code.
 
-<hr class="home-divider home-divider--major">
-
 ## Computer Vision & Machine Learning Projects
 {: .home-major-heading }
 
@@ -57,8 +55,6 @@ PyTorch ResNet-18 transfer-learning workflow for 17-class multi-label satellite 
 
 [View project →](projects/bigearthnet.md)
 
-<hr class="home-divider home-divider--major">
-
 ## Personal Projects
 {: .home-major-heading }
 
@@ -67,8 +63,6 @@ PyTorch ResNet-18 transfer-learning workflow for 17-class multi-label satellite 
 Cloud-native geospatial analysis of seasonal vegetation greenness, snow, and ice across Anchorage, Alaska, using eight Sentinel-2 acquisitions, fixed geographic study regions, and interactive regional statistics.
 
 [View project →](/projects/anchorage-through-the-seasons/)
-
-<hr class="home-divider home-divider--major">
 
 ## Applied Mathematics & Data Science
 {: .home-major-heading }
@@ -90,8 +84,6 @@ Educational notebooks and technical explorations of mathematical and computation
 ### [Linear PCA](https://github.com/bodle720/DSTopics/blob/main/PCA_linear/pca_linear_oscillation_system.ipynb) · [Kernel PCA](https://github.com/bodle720/DSTopics/blob/main/PCA_kernel/pca_kernel.ipynb) · [Robust PCA](https://github.com/bodle720/DSTopics/blob/main/PCA_robust/PCA_robust_handwritten_digits_noise.ipynb) · [Sparse PCA](https://github.com/bodle720/DSTopics/blob/main/PCA_sparse/PCA_sparse_handwritten_digits.ipynb)
 
 <p style="color: var(--muted);">Explores dimensionality reduction, nonlinear structure, low-rank and sparse decomposition, and interpretability through four Principal Component Analysis notebooks.</p>
-
-<hr class="home-divider home-divider--major">
 
 ## Technical Areas
 {: .home-major-heading }
