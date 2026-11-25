@@ -12,18 +12,7 @@ This portfolio highlights selected projects with concise case studies, visuals, 
 
 ---
 
-## Featured Projects
-
-| Project                                                                     | Focus                                                           | What it Shows                                                                                                   |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| [Global Wheat Head Detection](projects/global-wheat-head-detection.md)      | YOLO object detection, MLflow, FastAPI, Docker                  | End-to-end dense small-object detection workflow from dataset preparation through deployment-ready inference    |
-| [Computer Vision Dataset Management System](projects/cvdms.md)              | AWS CDK, dataset infrastructure, CVDMS, versioned datasets      | Cloud-based data platform for validating, deduplicating, registering, and exporting computer vision datasets    |
-| [BigEarthNet Multi-Label Satellite Classification](projects/bigearthnet.md) | PyTorch, transfer learning, remote sensing, multi-label metrics | Multi-label satellite image classifier with threshold tuning, class imbalance analysis, and diagnostic heatmaps |
-| [Dynamic Mode Decomposition for Pendulum Video](projects/dmd-pendulum.md)   | Applied math, video dynamics, DMD, linear algebra               | Theory-to-implementation project connecting video data, eigenvalues, modes, frequencies, and forecasting        |
-
----
-
-## Project Highlights
+## Computer Vision & Machine Learning Projects
 
 ### [Global Wheat Head Detection](projects/global-wheat-head-detection.md)
 
@@ -49,11 +38,31 @@ PyTorch ResNet-18 transfer-learning workflow for 17-class multi-label satellite 
 
 ---
 
-### [Dynamic Mode Decomposition for Pendulum Video](projects/dmd-pendulum.md)
+## Personal Projects
 
-Applied math and video-analysis project using Dynamic Mode Decomposition on synthetic pendulum video. Compares full-frame pixel DMD with delay-coordinate bob-trajectory DMD to show how state representation affects reconstruction and forecasting.
+### [Anchorage Through the Seasons](/projects/anchorage-through-the-seasons/)
 
-[View project →](projects/dmd-pendulum.md)
+Cloud-native geospatial analysis of seasonal vegetation greenness, snow, and ice across Anchorage, Alaska, using eight Sentinel-2 acquisitions, fixed geographic study regions, and interactive regional statistics.
+
+[View project →](/projects/anchorage-through-the-seasons/)
+
+---
+
+## Applied Mathematics & Data Science
+
+Educational notebooks and technical explorations of mathematical and computational foundations.
+
+### [Dynamic Mode Decomposition (DMD)](projects/dmd-pendulum.md)
+
+<p style="color: var(--muted);">Identifies spatial modes and temporal dynamics in data, demonstrated through the reconstruction and forecasting of synthetic pendulum motion.</p>
+
+### [Independent Component Analysis (ICA)](https://github.com/bodle720/DSTopics/blob/main/ICA/ica_on_imagery.ipynb)
+
+<p style="color: var(--muted);">Separates mixed signals into statistically independent components, demonstrated using artificially mixed images.</p>
+
+### [Linear PCA](https://github.com/bodle720/DSTopics/blob/main/PCA_linear/pca_linear_oscillation_system.ipynb) · [Kernel PCA](https://github.com/bodle720/DSTopics/blob/main/PCA_kernel/pca_kernel.ipynb) · [Robust PCA](https://github.com/bodle720/DSTopics/blob/main/PCA_robust/PCA_robust_handwritten_digits_noise.ipynb) · [Sparse PCA](https://github.com/bodle720/DSTopics/blob/main/PCA_sparse/PCA_sparse_handwritten_digits.ipynb)
+
+<p style="color: var(--muted);">Explores dimensionality reduction, nonlinear structure, low-rank and sparse decomposition, and interpretability through four Principal Component Analysis notebooks.</p>
 
 ---
 

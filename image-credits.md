@@ -42,3 +42,9 @@ Unsplash images are used under the Unsplash license, which allows free use for c
 ## Project-generated Visuals
 
 Project screenshots, plots, diagrams, heatmaps, evaluation images, and result visualizations are generated from my own portfolio projects unless otherwise noted.
+
+### Anchorage Through the Seasons
+
+**Contains modified Copernicus Sentinel data 2025.** The maps, seasonal animations, charts and social preview are project-generated visualizations using Sentinel-2 imagery discovered through [Earth Search / Element 84](https://earth-search.aws.element84.com/v1). Municipal and mapped-water geometry comes from U.S. Census Bureau [TIGERweb](https://tigerweb.geo.census.gov/) and [2025 TIGER/Line shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2025.html). The animation locator uses the [QGIS Alaska sample dataset](https://github.com/qgis/QGIS-Sample-Data), adapted from VMAP0 vector data. The raw sample data are not redistributed here. See the [Anchorage case study](/projects/anchorage-through-the-seasons/#data-sources-and-attribution) for details.
+
+The Alaska locator incorporates material from the United States National Imagery and Mapping Agency (NIMA). This project is not endorsed or authorized by NIMA or the United States Department of Defense.

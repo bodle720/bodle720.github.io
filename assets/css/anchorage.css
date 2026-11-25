@@ -1,0 +1,25 @@
+/* Local to the Anchorage project; site-wide styles are unchanged. */
+.anchorage-figure { margin: 1.5rem 0 2rem; text-align: center; }
+.anchorage-figure img { display: block; width: 100%; height: auto; margin: auto; border: 1px solid var(--border); }
+.anchorage-figure figcaption { color: var(--muted); font-size: .9rem; margin-top: .65rem; }
+.anchorage-figure a { display: block; }
+.anchorage-scroll, #anchorage-data .scroll { overflow-x: auto; max-width: 100%; }
+#anchorage-data { padding: 16px; margin: 1.25rem 0; background: var(--bg); border: 1px solid var(--border); border-radius: 14px; min-width: 0; }
+#anchorage-data .dates { display: flex; gap: 8px; flex-wrap: wrap; margin: 1rem 0; }
+#anchorage-data button { font: inherit; background: var(--card-2); color: var(--text); border: 1px solid var(--border); border-radius: 7px; padding: 7px 11px; cursor: pointer; }
+#anchorage-data button[aria-pressed=true] { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 700; }
+#anchorage-data button:focus-visible, #anchorage-data summary:focus-visible, #anchorage-data .scroll:focus-visible { outline: 2px solid #ffd166; outline-offset: 2px; }
+#anchorage-data h3 { margin: 1rem 0 .5rem; }
+#anchorage-data table { min-width: 620px; margin: .5rem 0; font-size: .85rem; font-variant-numeric: tabular-nums; }
+#anchorage-data #ad-extra { min-width: 850px; }
+#anchorage-data th, #anchorage-data td { padding: 8px 7px; text-align: right; border: 1px solid var(--border); }
+#anchorage-data th:first-child { text-align: left; min-width: 130px; }
+#anchorage-data tbody th { background: transparent; }
+#anchorage-data tbody tr:last-child { font-weight: 700; background: var(--card-2); }
+#anchorage-data .note, #anchorage-data caption { color: var(--muted); font-size: .85rem; }
+#anchorage-data caption { text-align: left; margin-bottom: .5rem; }
+#anchorage-data .flag { color: #ffd166; }
+#anchorage-data details { margin: 1.25rem 0; }
+#anchorage-data summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.anchorage-equation { overflow-x: auto; font-size: 1.05rem; }
+@media (max-width: 600px) { #anchorage-data { padding: 10px; } #anchorage-data button { padding: 7px 9px; } }
