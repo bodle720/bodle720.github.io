@@ -244,8 +244,6 @@ As a separate engineering exercise, a municipality-wide COG was uploaded to priv
 
 The [processing scripts](https://github.com/bodle720/DSTopics/tree/main/Anchorage_Seasons/scripts) and [reproducibility guide](https://github.com/bodle720/DSTopics/blob/main/Anchorage_Seasons/reproducibility/README.md) document the workflow and inputs. The original run reported successful geometry, full-resolution COG, grid and accounting checks. A complete rebuild from a fresh clone has not been independently tested; large raster and local QGIS data are not part of the public repository. This is descriptive remote sensing, not a trained machine learning model, independent field-validated land-cover classification or causal study.
 
-I directed the investigation, selected and reviewed the scientific methodology, executed workflows, inspected outputs and investigated anomalies. AI-assisted code generation was used extensively; the implementation is public for technical review.
-
 ## Data Sources and Attribution
 
 **Contains modified Copernicus Sentinel data 2025.** [Copernicus Sentinel data legal notice](https://ewds.climate.copernicus.eu/licences/ec-sentinel).
