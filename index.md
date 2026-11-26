@@ -71,7 +71,7 @@ Educational notebooks and technical explorations of mathematical and computation
 
 ### [Dynamic Mode Decomposition (DMD)](projects/dmd-pendulum.md)
 
-<p style="color: var(--muted);">Identifies spatial modes and temporal dynamics in data, demonstrated through the reconstruction and forecasting of synthetic pendulum motion.</p>
+<p style="color: var(--muted);">Identifies spatial modes and temporal dynamics in data, demonstrated through the reconstruction and forecasting of synthetic pendulum motion. View the full Jupyter notebook on GitHub <a href="https://github.com/bodle720/DSTopics/blob/main/DMD/DMD_pendulum_video.ipynb">here</a>.</p>
 
 <hr class="home-divider home-divider--minor">
 
