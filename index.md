@@ -60,7 +60,7 @@ PyTorch ResNet-18 transfer-learning workflow for 17-class multi-label satellite 
 
 ### [Anchorage Through the Seasons](/projects/anchorage-through-the-seasons/)
 
-Cloud-native geospatial analysis of seasonal vegetation greenness, snow, and ice across Anchorage, Alaska, using eight Sentinel-2 acquisitions, fixed geographic study regions, and interactive regional statistics.
+Cloud-native geospatial analysis of seasonal vegetation greenness, snow, and ice across Anchorage, Alaska, using eight Sentinel-2 acquisitions, fixed geographic study regions, and interactive regional statistics. View the full Jupyter notebook on GitHub [here](https://github.com/bodle720/DSTopics/blob/main/Anchorage_Seasons/Anchorage_Seasons.ipynb).
 
 [View project →](/projects/anchorage-through-the-seasons/)
 
