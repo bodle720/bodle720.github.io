@@ -14,14 +14,9 @@ This page lists credits for externally sourced visual assets used on this portfo
 
 Unsplash images are used under the Unsplash license, which allows free use for commercial and non-commercial purposes. Attribution is not required, but it is appreciated, so credits are included here for transparency and thanks to the photographers.
 
-### Portfolio homepage / social preview
+### Portfolio Sidebar and Social Preview
 
-> Photo by <a href="https://unsplash.com/@skyfly_rich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Richard Lu</a> on <a href="https://unsplash.com/photos/snow-capped-mountains-loom-over-a-forest-tK3_pEIiiSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-> Used for the homepage social preview.
-
-### Portfolio Sidebar Illustration
-
-Conceptual illustration of computer vision, object detection,
+Conceptual illustrations of computer vision, object detection,
 semantic segmentation, and multispectral remote sensing.
 
 ### Global Wheat Head Detection
